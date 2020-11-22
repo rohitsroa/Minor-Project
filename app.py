@@ -38,7 +38,7 @@ def main():
 		'Syria',
 		'Venezuela',
 		'Yemen']
-		country = st.multiselect('Select a Country',COUNTRIES)
+		country = st.multiselect('Select a Country',COUNTRIES,default=["Afghanistan"])
 		bye=",".join(str(x) for x in country)
 		selected_year_start = st.slider('Start Year', 1970, 2025)
 		selected_year_end = st.slider('End Year', selected_year_start, 2025)
